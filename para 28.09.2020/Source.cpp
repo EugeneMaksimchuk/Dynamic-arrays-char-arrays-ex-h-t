@@ -64,19 +64,78 @@ void main()
 
 
 
-	char arr[255] = "Hi";
-	char arr2[] = "1234567890";
-	cout << arr << endl;
-	strncat_s(arr, arr2, 5);//добавляє елементи з 1 масива у другий, 
-							//якщо у 1 більше ніж у 2 (arr,arr2, 5-число елементів які добавить)
-	cout << arr << endl;
-	cout << arr << endl;
+	//char arr[255] = "Hi";
+	//char arr2[] = "1234567890";
+	//cout << arr << endl;
+	//strncat_s(arr, arr2, 5);//добавляє елементи з 1 масива у другий, 
+	//						//якщо у 1 більше ніж у 2 (arr,arr2, 5-число елементів які добавить)
+	//cout << arr << endl;
+	//cout << arr << endl;
 
 
 
 
+	/*char arr[255];
+	cin.getline(arr,255);
+	int spaces = 0;
+	int A=0;
+	int a=0;
+	int punct = 0;
+	for (int i = 0; i < 255; i++)
+	{
+		if (arr[i]==32)
+		{
+			spaces++;
+		}
+		if (arr[i]>=65 && arr[i]<=90)
+		{
+			A++;
+		}
+		if (arr[i]>=97 && arr[i]<=122)
+		{
+			a++;
+		}
+		if (arr[i]>=33 && arr[i]<=47 || arr[i]>=58 && arr[i]<=64)
+		{
+			punct++;
+		}
+	}
+	cout << "Spaces -> "<<spaces << endl;
+	cout << "A,B,C... -> " << A << endl;
+	cout << "a,b,c... -> " << a << endl;
+	cout << "?!., -> " << punct << endl;*/
 
+                                              // АБО
 
+	/*char arr[255];
+	cin.getline(arr, 255);
+	int spaces = 0;
+	int A = 0;
+	int a = 0;
+	int digit = 0;
+	for (int i = 0; i < strlen(arr); i++)
+	{
+		if (isspace(arr[i]))
+		{
+			spaces++;
+		}
+		if (isupper(arr[i]))
+		{
+			A++;
+		}
+		if (islower(arr[i]))
+		{
+			a++;
+		}
+		if (isdigit(arr[i]))
+		{
+			digit++;
+		}
+	}
+	cout << "Spaces -> " << spaces << endl;
+	cout << "A,B,C... -> " << A << endl;
+	cout << "a,b,c... -> " << a << endl;
+	cout << "1,2,3... -> " << digit << endl;*/
 
 
 
