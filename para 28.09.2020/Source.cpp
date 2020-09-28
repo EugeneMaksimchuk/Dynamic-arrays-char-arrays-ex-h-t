@@ -142,6 +142,19 @@ void main()
 
 
 
+	char arr[255];
+	cin.getline(arr, 255);
+	int index = 0;
+	for (int i = 0; i < strlen(arr); i++)
+	{
+		if (arr[i]==46)
+		{
+			index = arr[i];
+			index = i+1;
+		}
+	}
+	cout << index << endl;
+
 
 
 
